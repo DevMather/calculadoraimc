@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(47, 0, 255, 0.2), rgba(255, 255, 255, 0.05));
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(45%) contrast(110%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+input {
+    border: none;
+    border-bottom: solid 1px;
+    border-color: rgb(208, 215, 221);
+    background-color: rgba(255, 255, 255, 0.00);
+    color: white;
+    width: 300px;
+    outline: none;
+    padding: 5px;
+    transition: 0.1s ease; 
+}
+
+input:focus {
+    border-color: rgb(160, 160, 160);
+}
+
+label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+.container-calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 15px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    gap: 15px;
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-top: 14%;
+    width: 400px;
+}
+
+.container-calculadora h1 {
+    margin-bottom: 20px;
+    color: rgb(139, 139, 139);
+}
+
+.container-peso {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-altura {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#calcular {
+    width: 300px;
+    height: 38px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#calcular:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.5);
+    filter: brightness(110%);
+}
+
+.resultado {
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: rgb(177, 175, 175);
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    font-weight: bold;
+    color: blueviolet;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#resultado {
+    font-size: 18px;
+}
+
+.classificacao {
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+
+#mensagem2 {
+    font-size: 18px;
+}
+
+
+

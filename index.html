@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <video src="cadastroBackground.mp4" autoplay loop muted></video>
     <div class="container-calculadora">
         <h1>Calculadora de IMC</h1>
         
-        <label for="peso">Peso (kg)</label>
-        <input type="text" placeholder="Ex: 74" id="peso">
+        <div class="container-peso">
+            <label for="peso">Peso (kg)</label>
+            <input type="text" placeholder="Ex: 74" id="campoPeso">
+        </div>
 
-        <label for="altura">Altura (M)</label>
-        <input type="text" placeholder="Ex: 1,76" id="altura">
+        <div class="container-altura">
+            <label for="altura">Altura (M)</label>
+            <input type="text" placeholder="Ex: 1.76" id="campoAltura">
+        </div>
 
         <button id="calcular">Calcular</button>
 
-        <p id="resultado">Seu IMC é: 0.00</p>
+        <p class="resultado">Seu IMC é: <span id="resultado">0.00</span></p>
+        <p class="classificacao">Sua classificação é: <span id="mensagem2"></span></p>
     </div>
+ <script src="script.js" defer></script>
 </body>
 </html>
