@@ -27,7 +27,7 @@ function calcularIMC() {
     } else if (IMC < 25) {
         mensagem2.textContent = "Peso Normal"
     } else if (IMC < 30) {
-        mensagem2.textContent = "Sobrepreso";
+        mensagem2.textContent = "Sobrepeso";
     } else if (IMC < 35) {
         mensagem2.textContent = "Obesidade Grau I";
     } else if (IMC < 40) {
